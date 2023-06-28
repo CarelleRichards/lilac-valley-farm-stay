@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name=“author” content="Carelle Mulawa-Richards">
+    <meta name=“description” content="Lilac Valley Farm Stay offers luxury accommodation in the Blue Mountains, New South Wales, Australia.">
+    <meta name=“keywords” content="Blue Mountains accommodation, Sydney accommodation, luxury accommodation, barn house, relaxing getaways">
+    <title>Lilac Valley Farm Stay homepage</title> <!-- Page title in browser tab and website -->
+    <link rel="preload" href="css/style.css" as="style"> <!-- Preload external stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo-favicon.jpg"> <!-- Favicon in browser tab -->
+    <script src="https://kit.fontawesome.com/fcea8451ee.js" crossorigin="anonymous"></script> <!-- Font Awsome -->
+    <script src="js/scripts.js"></script> <!-- External JavaScript file -->
+</head>
+
+<body>
+
+    <!-- Header and navigation area -->
+    <header>
+        <nav class="black-bg">
+
+            <!-- Logo -->
+            <a class="logo-link" href="#">
+                <img class="header-logo" src="images/logo-horizontal-white.png" alt="Image of Lilac Valley Farm Stay logo">
+            </a>
+            
+            <!-- Burger menu -->
+            <input type="checkbox" id="toggle">
+            <label class="menu-label" for="toggle">
+                <span class="menu-container">
+                    <span class="line" id="active"></span>
+                    <span class="screen-reader-only">Menu</span>
+                </span>
+            </label>
+            <div class="mobile-overlay"></div>
+
+            <!-- Menu links -->
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Booking button -->
+            <!-- In a real scenario, this button would open a pop-up window for the accommodations booking system provider -->
+            <button class="btn">Bookings</button>
+        </nav>
+    </header>
+
+    <!-- Main area -->
+    <main>
+
+        <!-- Full screen hero area -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hidden-heading">Lilac Valley Farm Stay homepage</h1>
+                <p class="hero-accent">Luxury accommodation in the Blue Mountains</p>
+                <img class="down-arrow" src="images/down-arrow-white.png" alt="Down arrow icon"> <!-- hellokisdottir (2022) -->
+            </div>
+        </section>
+
+        <!-- About area -->
+        <section class="content-region" id="about">
+            <div class="row">
+
+                <!-- Image -->
+                <div class="two-column">
+                    <img class="feature-image" src="images/lounge.jpg" alt="Image of lounge room"> <!-- Hawson (2022) -->
+                </div>
+                
+                <!-- Content -->
+                <div class="two-column">
+                    <h2>About</h2>
+                    <p class="accent">Simple, rustic farm stay accommodation in the hills of the Blue Mountains.</p>
+                    <p>The property is owned by Marina Ye, a local interior designer who purchased the old rundown barn three years ago 
+                        with a plan to renovate. After years of hard work, the property has been beautiful restored. Whether you’re a Sydney
+                        resident or travelling from afar, Lilac Valley Farm Stay is the perfect option for a relaxing getaway, in an amazing location.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features area -->
+        <section id="features" class="brown-bg content-region">
+            <div class="row">
+                
+                <!-- Content -->
+                <div class="two-column features-1">
+                    <h2>Features</h2>
+                    <p class="accent">To ensure a comfortable and memorable stay, we have everything you need.</p>
+                    <ul>
+                        <li>Beautifully restored, open plan, luxury barn house.</li>
+                        <li>Comfortable super king sized bed.</li>
+                        <li>On four acres of farm land.</li>
+                        <li>Home to sheep, chickens, ducks and a goat.</li>
+                        <li>Outdoor plunge pool just off the back veranda.</li>
+                        <li>Stunning cottage garden.</li>
+                        <li>Luxury amenities, inlcluding a modern kitchen.</li>
+                        <li>Close to bushwalking and hiking trails.</li>
+                    </ul>
+                </div>
+
+                <!-- Image -->
+                <div class="two-column features-2">
+                    <img class="feature-image" src="images/sheep.jpg" alt="Image of sheep"> <!-- Hawson (2022) -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery area -->
+        <!-- All gallery images have lazy loading -->
+        <section id="gallery" class="center content-region">
+            <h2>Gallery</h2>
+            <div class="gallery-container"> 
+                <!-- All images are from Hawson (2022) -->
+                <!-- 6 images display on desktop, 4 images display on tablet and mobile-->
+                <img class="big-image" src="images/bedroom.jpg" alt="Image of the bedroom" loading="lazy"> 
+                <img  src="images/outdoor-dining.jpg" alt="Image of the outdoor dining area" loading="lazy">
+                <img src="images/lounge-and-dining.jpg" alt="Image of the lounge and dining room" loading="lazy">
+                <img class="big-image" src="images/dining-room.jpg" alt="Image of the dining room" loading="lazy">
+                <img class="big-image tablet-hidden" src="images/bathroom.jpg" alt="Image of the bathroom" loading="lazy"> <!-- Hidden on mobile and tablet -->
+                <img class="tablet-hidden" src="images/second-bedroom.jpg" alt="Image of the second bedroom" loading="lazy"> <!-- Hidden on mobile and tablet -->
+            </div>
+        </section>
+
+        <!-- Reviews area -->
+        <section class="brown-bg center content-region">
+            <h2>Reviews</h2>
+            <div class="row reviews">
+
+                <!-- Review 1 -->
+                <article class="three-column review-box">
+                    <h3>Gary Greenfield</h3>
+                    <p>“My partner and I spent the weekend her for our anniversary. We had the most wonderful time. All 
+                        the staff were very welcoming and the property is absolutely stunning. Highly recommend!”</p>
+                </article>
+
+                <!-- Review 2 -->
+                <article class="three-column review-box">
+                    <h3>Sue Murphy</h3>
+                    <p>“I would give this place 10 stars if I could! This was the escape I needed. Beautiful scenery and 
+                        it's close to some hiking trails, if you like doing that sort of stuff. Enjoyed my stay here.”</p>
+                </article>
+
+                <!-- Review 3 -->
+                <article class="three-column review-box">
+                    <h3>Kellie Kay</h3>
+                    <p>“I stayed here with some girlfriends and we had the best time. Rosie, the goat, was so cute. This 
+                        is a great place to go if you want to escape the hustle and bustle of the city.”</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact area -->
+        <section class="content-region" id="contact">
+            <div class="row">
+
+                <!-- Image -->
+                <div class="two-column tablet-hidden">
+                    <img class="feature-image" src="images/bush-scenery.jpg" alt="Image of Blue Mountains bush"> <!-- Hawson (2022) -->
+                </div>
+
+                <!-- Form -->
+                <!-- Success message displays after submitting but data is not processed -->
+                <div class="two-column">
+                    <h2>Contact</h2>
+                    <form class="contact-form" onsubmit="thanks()">
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" name="name" class="contact-fields" required>
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" class="contact-fields" required>
+                        <label for="telephone">Telephone*</label>
+                        <input type="text" id="telephone" name="telephone" class="contact-fields" required>
+                        <label for="message">Message*</label>
+                        <textarea id="message" name="message" class="contact-fields" required></textarea>
+                        <button class="btn btn-dark" type="submit" value="Submit">Submit</button>
+                    </form> 
+                </div>
+            </div>
+        </section>
+
+        <!-- Map area -->
+        <section class="full-screen">
+            <h2 class="hidden-heading">Location</h2>
+
+            <!-- Map has lazy loading -->
+            <!-- Address address is just a placeholder for the purpose of the assignment -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d304295.7074492605!2d150.88405704128084!3d-33.74853661139009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12718bd34c3bb7%3A0xb7100a4c5c25f348!2s270%20Govetts%20Leap%20Rd%2C%20Blackheath%20NSW%202785!5e0!3m2!1sen!2sau!4v1683511763007!5m2!1sen!2sau" 
+                class="google-map" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
+
+    <!-- Footer area -->
+    <footer class="center">
+        <div class="row footer-content brown-bg">
+
+            <!-- Telephone and email -->
+            <div class="three-column footer-1">
+                <h3>Telephone</h3>
+                <p>+61 3 9418 1000</p>
+                <h3>Email</h3>
+                <p>hello@lilacvalleyfarmstay.com</p>
+            </div>
+
+            <!-- Logo and social media -->
+            <div class="three-column footer-2">
+                <a href="#"><img class="footer-logo" src="images/logo.png" alt="Image of Lilac Valley Farm Stay logo"></a>
+                <div> 
+                    <!-- Social media links are placeholders, these should go to Lilac Valley Farm Stay's profile -->
+                    <!-- For all social media icons, circle background and stack classes are from Font Awesome (2023a) -->
+                    <!-- As recommended by Font Awesome (2023e), for screen readers, each icon has a hidden span element to describe the icon -->
+                    <a class="social-icons scale-up fa-stack fa-2x " href="https://www.facebook.com/" target="_blank"> 
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i title="Facebook" class="fa-brands fa-facebook-f fa-stack-1x fa-inverse"></i> <!-- Icon from Font Awesome (2023b) -->
+                        <span class="screen-reader-only">Facebook</span>
+                    </a>
+                    <a class="social-icons fa-stack fa-2x scale-up" href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i title="Instagram" class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i> <!-- Icon from Font Awesome (2023c) -->
+                        <span class="screen-reader-only">Instagram</span>
+                    </a>
+                    <a class="social-icons fa-stack fa-2x scale-up" href="https://twitter.com/" target="_blank">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i title="Twitter" class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i> <!-- Icon from Font Awesome (2023d) -->
+                        <span class="screen-reader-only">Twitter</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="three-column footer-3">
+                <h3>Address</h3>
+                <p>270 Govetts Leap Road<br>Blackheath NSW 2785<br>Australia</p>
+            </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer black-bg">
+            <p class="small">This website has been created as part of an assignment in an approved course of study for 
+                Curtin University and contains copyright material not created by the author. All copyright material 
+                used remains copyright of the respective owners and has been used here pursuant to Section 40 of the
+                Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without
+                consent of the original copyright owners. See code comments for references.</p>
+        </div>
+    </footer>
+</body>
+<!--
+    References
+
+    Berryhill, Daniel. 2021. “5 Ways to Make Labels Accessible for Input Controls — and 3 Ways Not to”. Medium. Accessed 15 May 2023. 
+    https://medium.com/codex/5-ways-tomake-labels-accessible-for-input-controls-and-3-ways-not-to-55ecb2a2e80a.
+
+    Connary. 2022. “Addington CF | beautiful serif font family”. Envato Elements. Accessed 15 May 2023. 
+    https://elements.envato.com/addington-cf-beautiful-serif-font-family-R3FXLA.
+
+    Font Awesome. 2023a. “Stacking Icons”. Font Awesome. Accessed 15 May 2023.
+    https://fontawesome.com/docs/web/style/stack.
+
+    Font Awesome. 2023b. “facebook-f”. Font Awesome. Accessed 15 May 2023.
+    https://fontawesome.com/icons/facebook-f?f=brands&s=solid.
+
+    Font Awesome. 2023c. “instagram”. Font Awesome. Accessed 15 May 2023.
+    https://fontawesome.com/icons/instagram?f=brands&s=solid.
+
+    Font Awesome. 2023d. “twitter”. Font Awesome. Accessed 15 May 2023.
+    https://fontawesome.com/icons/twitter?f=brands&s=solid.
+
+    Font Awesome. 2023e. “Accessibility”. Font Awesome. Accessed 15 May 2023.
+    https://fontawesome.com/docs/web/dig-deeper/accessibility.
+
+    Hawson, Marnie. 2022. “A Fifth Generation Farmer’s Homestead Turned Boutique Accommodation”. The Design Files. 
+    Accessed 15 May 2023. https://thedesignfiles.net/2022/03/stays-woolbrook-homestead.
+
+    Hellokisdottir. 2022. “Handsketched Arrows and Doodles”. Envato Elements. Accessed 15 May 2023. 
+    https://elements.envato.com/handsketched-arrows-and-doodles-SLJKNTU.
+    
+    I See Boxes. n.d. “Animated Hamburger Icon Menu Using Checkbox and Before/After | No Javascript”. CodePen. 
+    Accessed 15 May 2023. https://codepen.io/iseeboxes/pen/yLVyKyK.
+    
+    MJB Letters. 2021. “Photomark Signature”. Dafont. Accessed 15 May 2023.
+    https://www.dafont.com/photomark-signature.font.
+-->
+</html>
